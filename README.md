@@ -3,7 +3,9 @@
 Due to plagiarism concerns, instead of uploading pure code, find some demos of courseworks here.
 
 ## Group Project - Game Engine
-I have been developing a C++, OpenGl, GLSL game engine as part of a group project module in my final year of my masters degree in Computer Science with High Performance Games Engineering. A more in depth video of the engine will be availabale soon which will include features added by my team members. However, here I will demo the particle system which I implemented. To implement this feature, I had to write a new shader in GLSL and a renderer which makes use of instancing in OpenGl. I use a texture atlas to texture particles and can index into the atlas using different parameters. 
+I have been developing a C++, OpenGl, GLSL game engine as part of a group project module in my final year of my masters degree in Computer Science with High Performance Games Engineering. A more in depth video of the engine will be availabale soon which will include features added by my team members. However, the repository is public and the code can be found at https://github.com/kablouser/PlatinumEngine. 
+
+Here I will demo the particle system which I implemented. To implement this feature, I had to write a new shader in GLSL and a renderer which makes use of instancing in OpenGl. I use a texture atlas to texture particles and can index into the atlas using different parameters. 
 
 ### Particle Effect No Texture - Pixel Fire
 
