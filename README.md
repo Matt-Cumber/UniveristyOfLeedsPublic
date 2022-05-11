@@ -15,6 +15,8 @@ https://user-images.githubusercontent.com/46685490/167919133-dd6af308-eacb-4e9f-
 
 https://user-images.githubusercontent.com/46685490/167919159-d2dd953c-d150-4a56-9103-d2c47d74a8bd.mov
 
+### Normal Mapping
+
 ## Animation and Simulation - Cloth Simulator 
 Using a mass-spring model, a simple cloth can simulated using some basic equations. *Note cloth self intersections were not dealt with*. 
 
