@@ -35,9 +35,11 @@ https://user-images.githubusercontent.com/46685490/168166456-435e1a1a-6356-449b-
 
 https://user-images.githubusercontent.com/46685490/168165030-2e2e2f60-6290-4497-96bd-f24a30bc8afc.mp4
 
-## Geometric Processing
+## Animation and Simulation - 2D Fluid Simulation
 
-### Loop Subdivison
+https://user-images.githubusercontent.com/46685490/168178564-949b93b5-dd7b-452f-92b9-1726eeade167.mp4
+
+## Geometric Processing - Loop Subdivision
 Each triangle of the mesh is split into 4 triangles on each sub divide call. Code was written in C++
 
 https://user-images.githubusercontent.com/46685490/168170557-9e387b15-240d-4d93-af16-34d296da09b9.mp4
