@@ -16,10 +16,21 @@ https://user-images.githubusercontent.com/46685490/167919133-dd6af308-eacb-4e9f-
 https://user-images.githubusercontent.com/46685490/167919159-d2dd953c-d150-4a56-9103-d2c47d74a8bd.mov
 
 ### Normal Mapping
+The objects on the left use a default phong shader where the normal is the normal of the plane. The objects on the right (separated using the bin object) are using a normal texture to sample a normal instead of one normal for the whole plane. This allows lighting to take into consideration the texture of the object, resulting in more depth to the images.
+
+https://user-images.githubusercontent.com/46685490/168167300-22c6274c-7439-432e-bb9c-6e78074325c0.mp4
 
 ## Animation and Simulation - Cloth Simulator 
-Using a mass-spring model, a simple cloth can simulated using some basic equations. *Note cloth self intersections were not dealt with*. 
+Using a mass-spring model, a simple cloth can simulated using some basic equations. Code was written in C++. *Note cloth self intersections were not dealt with*. 
 
 ### A cloth fixed at two corners with wind blowing
 
-### A cloth falling onto a spinning ball rested on the floor
+https://user-images.githubusercontent.com/46685490/168165014-2ed102b3-2289-44bf-90dc-57e7788335fd.mp4
+
+## A cloth falling onto a ball on the ground
+
+https://user-images.githubusercontent.com/46685490/168166456-435e1a1a-6356-449b-9810-3ab7c9dd6b15.mp4
+
+### A cloth falling onto a spinning ball
+
+https://user-images.githubusercontent.com/46685490/168165030-2e2e2f60-6290-4497-96bd-f24a30bc8afc.mp4
