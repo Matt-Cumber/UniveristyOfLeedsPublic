@@ -20,6 +20,20 @@ The objects on the left use a default phong shader where the normal is the norma
 
 https://user-images.githubusercontent.com/46685490/168167300-22c6274c-7439-432e-bb9c-6e78074325c0.mp4
 
+## High Performance Graphics - Vulkan Application with Bloom Post Processing
+
+The application I wrote was built in 3 stages over 3 courseworks submitted to the University of Leeds and was written in C++ and runs on Windows. The first coursework involved rendering obj files with a mtl file which contained both colours and textures. Next, the second coursework expanded on this by implenenting two lighting models: Blinn Phong and a PBR model. In the final coursework I decided to implement two post processing effects: Pixelation and Bloom. The bloom I implemented is a simple gaussian blur which uses the 1D formula from https://en.wikipedia.org/wiki/Gaussian_blur. I also make use of linear filtering to reduce the number of taps required to blur the image based on the explanation from the blog post here https://www.rastergrid.com/blog/2010/09/efficient-gaussian-blur-with-linear-sampling/. The weights and offsets are calculated once on the CPU when required and sent to the GPU for rendering, rather than computing the blur in the shader itself.
+
+Here are some results from the bloom post processing effect:
+
+Using a threshold of 1.0 to extract bright lights, blurring the thresholded image 1 time, using sigma as 9 and a kernel footprint size of 22 for blurring, the below image is produced.
+
+![image](https://user-images.githubusercontent.com/46685490/172678910-37a3e890-5b98-476e-82ec-298af83b4ce1.png)
+
+Using the same settings as above but blurring the image 10 times results in this image.
+
+![image](https://user-images.githubusercontent.com/46685490/172680370-a57600f2-0f83-4be2-8398-afb27e3326bd.png)
+
 ## Animation and Simulation - Cloth Simulator 
 Using a mass-spring model, a simple cloth can simulated using some basic equations. Code was written in C++. *Note cloth self intersections were not dealt with*. 
 
